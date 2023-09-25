@@ -248,7 +248,7 @@
                                     </li>
                                 </ul>
 
-                                <a href="#" class="header__cart-view-cart btn btn-primary">Xem giỏ hàng</a>
+                                <a href="#" class="header__cart-view-cart btn btn--primary">Xem giỏ hàng</a>
                             </div>
 
                         </div>
@@ -259,14 +259,14 @@
 
         <div class="app__container">
             <div class="grid">
-                <div class="grid__row">
+                <div class="grid__row app__content">
                     <div class="grid__column-2">
                         <nav class="category">
                             <h3 class="category__heading">
                                 <i class="category__heading-icon fas fa-list"></i>
                                 Danh mục
                             </h3>
-            
+
                             <ul class="category-list">
                                 <li class="category-item category-item--active">
                                     <a href="" class="category-item__link">Điện thoại iPhone</a>
@@ -280,7 +280,43 @@
                             </ul>
                         </nav>
                     </div>
-                    <div class="grid__column-10"></div>
+                    <div class="grid__column-10">
+                        <div class="home-filter">
+                            <span class="home-filter__label">Sắp xếp theo</span>
+                            <button class="home-filter__btn btn">Phổ biến</button>
+                            <button class="home-filter__btn btn btn--primary">Mới nhất</button>
+                            <button class="home-filter__btn btn">Bán chạy</button>
+
+                            <div class="select-input">
+                                <span class="select-input__label">Giá</span>
+                                <i class="select-input__icon fas fa-angle-down"></i>
+                                <!-- List option -->
+                                <ul class="select-input__list">
+                                    <li class="select-input__item">
+                                        <a href="" class="select-input__link">Giá: Thấp đến Cao</a>
+                                    </li>
+                                    <li class="select-input__item">
+                                        <a href="" class="select-input__link">Giá: Cao đến Thấp</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="home-filter__page">
+                                <span class="home-filter__page-num">
+                                    <span class="home-filter__page-current">1</span>/14
+                                </span>
+
+                                <div class="home-filter__page-control">
+                                    <a href="" class="home-filter__page-btn home-filter__page-btn--disable">
+                                        <i class="home-filter__page-icon fas fa-angle-left"></i>
+                                    </a>
+                                    <a href="" class="home-filter__page-btn">
+                                        <i class="home-filter__page-icon fas fa-angle-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -291,11 +327,12 @@
     </div>
 
     <!-- Modal layout  -->
-    <!-- <div class="modal">
+    <div class="modal">
         <div class="modal__overlay"></div>
-        <div class="modal__body"> -->
-    <!-- Register Form -->
-    <!-- <div class="auth-form">
+        <div class="modal__body">
+
+            <!-- Register Form -->
+            <div class="auth-form">
                 <div class="auth-form__container">
                     <div class="auth-form__header">
                         <h3 class="auth-form__heading">Đăng ký</h3>
@@ -324,7 +361,7 @@
 
                     <div class="auth-form__controls">
                         <button class="btn btn--normal auth-form__controls-back">TRỞ LẠI</button>
-                        <button class="btn btn-primary">ĐĂNG KÝ</button>
+                        <button class="btn btn--primary">ĐĂNG KÝ</button>
                     </div>
                 </div>
 
@@ -342,10 +379,10 @@
                         </span>
                     </a>
                 </div>
-            </div> -->
+            </div>
 
-    <!-- Login Form -->
-    <!-- <div class="auth-form">
+            <!-- Login Form -->
+            <div class="auth-form">
                 <div class="auth-form__container">
                     <div class="auth-form__header">
                         <h3 class="auth-form__heading">Đăng nhập</h3>
@@ -371,7 +408,7 @@
 
                     <div class="auth-form__controls">
                         <button class="btn btn--normal auth-form__controls-back">TRỞ LẠI</button>
-                        <button class="btn btn-primary">ĐĂNG NHẬP</button>
+                        <button class="btn btn--primary">ĐĂNG NHẬP</button>
                     </div>
                 </div>
 
@@ -391,7 +428,7 @@
                 </div>
             </div>
         </div>
-    </div> -->
+    </div>
 </body>
 
 </html>
